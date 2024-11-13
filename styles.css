@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background-color: rgb(168, 136, 197);
+  overflow: hidden;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+
+  color: rgb(222, 255, 234);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: min(50vw, 50vh);
+  height: min(50vw, 50vh);
+
+  background-color: aquamarine;
+}
+
+.row {
+  display: flex;
+
+  flex-grow: 1;
+
+  background-color: blue;
+}
+
+.cell {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  flex-grow: 1;
+
+  background-color: blueviolet;
+
+  padding: min(0.2vw, 0.2vh);
+  margin: min(0.2vw, 0.2vh);
+
+  font-size: min(5vw, 5vh);
+}
+
+.piece {
+  position: absolute;
+}
+
+.row:nth-child(even) > :nth-child(even) {
+  background-color: rgb(43, 226, 113);
+}
+.row:nth-child(odd) > :nth-child(odd) {
+  background-color: rgb(43, 226, 113);
+}
